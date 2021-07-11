@@ -12,6 +12,8 @@ export class RecipeItemComponent implements OnInit {
   // 在引入 service 之前的資料流操作
   // @Output() selectedRecipe = new EventEmitter<void>()
 
+  @Input() index: number
+
   constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
